@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vars xmlns="http://www.idiominc.com/opentopic/vars">
+
+    <!-- Text to use for figure titles. Renders as part of <fig>/<title>
+          elements. -->
+    <variable id="Figure.title">Figure <param ref-name="number"/>: <param ref-name="title"
+        /></variable>
+    <variable id="Figure Number">Figure <param ref-name="number"/></variable>
+
+    <!-- Text to use for table titles. Renders as part of <table>/<title> 
+         elements. -->
+    <variable id="Table.title">Table <param ref-name="number"/>: <param ref-name="title"
+        /></variable>
+    <variable id="Table Number">Table <param ref-name="number"/></variable>
+
+    <!--  KLL 2017-05-25 -->
+    <!-- The heading string to put at the top of the Table of Contents -->
+    <variable id="Table of Contents">Table of Contents</variable>
+
+    <!-- Text to use for chapter titles.-->
+    <variable id="Chapter with number">Chapter <param ref-name="number"/></variable>
+
+    <!-- Text to use for appendix titles.-->
+    <variable id="Appendix with number">Appendix <param ref-name="number"/></variable>
+
+    <!-- Text to use for part titles.-->
+    <variable id="Part with number">Part <param ref-name="number"/></variable>
+
+    <!--  2017-05-25 -->
+    <!--  DITA for Print: Add fallback header and footer variables -->
+    <variable id="Copy Year">yyyy</variable>
+    <variable id="Product Name">product_name</variable>
+
+    <!--  2017-05-25 -->
+    <!--  DITA for Print: Set up headers that include generated text -->
+    <!-- The header that appears on odd-numbered pages. -->
+    <!-- The footer that appears on odd-numbered pages. -->
+    <!--DITA for Print-->
+    <variable id="Body odd footer">
+        <param ref-name="pagenum"/>&#xA0; <param ref-name="prodname"/>
+        <param ref-name="vrm"/>
+    </variable>
+
+    <!-- The footer that appears on even-numbered pages. -->
+    <variable id="Body even footer">
+        <param ref-name="pagenum"/>
+    </variable>
+    <!-- The footer that appears on the first page of a chapter. -->
+    <variable id="Body first footer">
+        <param ref-name="pagenum"/>
+    </variable>
+
+    <!-- The header that appears on the first page of a chapter. -->
+    <variable id="Body first header"/>
+
+    <!-- The header that appears on odd-numbered pages. -->
+    <!--DITA for Print-->
+    <variable id="Body odd header">
+        <param ref-name="heading"/>
+    </variable>
+
+    <!-- The header that appears on even-numbered pages. -->
+    <!--DITA for Print-->
+    <variable id="Body even header">
+        <param ref-name="title"/>
+    </variable>
+
+    <!--  2017-05-25 -->
+    <!--  DITA for Print: Set up headers that include boilerplate text -->
+    <!-- The header that appears on the odd-numbered table of contents pages. -->
+    <variable id="Toc odd header">
+        <param ref-name="heading"/>
+    </variable>
+
+    <!-- The header that appears on the odd-numbered table of contents
+         pages. -->
+    <variable id="Toc even header">
+        <param ref-name="title"/>
+    </variable>
+
+    <!-- The footer that appears on the odd-numbered table of contents
+         pages. -->
+    <variable id="Toc odd footer">
+        <param ref-name="prodname"/>
+        <param ref-name="vrm"/> &#xA0; <param ref-name="pagenum"/>
+    </variable>
+
+    <!-- The footer that appears on the even-numbered table of contents
+         pages. -->
+    <variable id="Toc even footer">
+        <param ref-name="pagenum"/>
+    </variable>
+
+    <!-- The header that appears on the odd-numbered index pages. -->
+    <variable id="Index odd header">Index</variable>
+
+    <!--  2017-05-23 -->
+    <!--  DITA for Print: Change or delete the title for the mini-TOC -->
+    <variable id="Mini Toc"/>
+
+    <!-- The unordered list bullet   -->
+    <variable id="Unordered List bullet">&#x2022;</variable>
+    <variable id="Unordered List bullet nested">&#9702;</variable>
+
+    <!--Labels for task sections-->
+    <!--  KLL 2016-08-29 Added labels for examples-->
+    <variable id="Task Prereq">Before you begin</variable>
+    <variable id="Task Context"/>
+    <variable id="Task Steps"/>
+    <variable id="#steps-unordered-label">
+        <variable id="Task Steps"/>
+    </variable>
+    <variable id="Step Number"><param ref-name="number"/>. </variable>
+    <variable id="Step Example">Example: </variable>
+    <variable id="Step Result">Result: </variable>
+    <variable id="Task Example">Example: </variable>
+    <variable id="Task Result">Result: </variable>
+    <variable id="Task Postreq">What to do next</variable>
+
+    <!-- TOMV (2014-11) Add Manual Part Number -->
+    <variable id="Manual Part Number">Manual Part No.&#xA0;<param ref-name="partNumber"/></variable>
+    <variable id="Custom Copyright Statement">Copyright &#169; <param ref-name="fromYear"/>–<param
+            ref-name="toYear"/> Harmonic Inc. All rights reserved. Harmonic, the Harmonic logo,
+        Omneon, the Omneon logo, [all other Harmonic products mentioned] are trademarks, registered
+        trademarks or service marks of Harmonic Inc. in the United States and other countries.
+        Dolby, Dolby Digital, Dolby Digital Plus and Dolby E are registered trademarks of Dolby
+        Laboratories. Implementations of AAC and HE-AAC by Fraunhofer IIS. Other company, product
+        and service names mentioned herein may be trademarks or service marks of their respective
+        owners. All product and application features and specifications are subject to change at
+        Harmonic's sole discretion at any time and without notice.</variable>
+
+    <!-- KLL  29 February 2016 variable for links to steps in the same task             	-->
+    <variable id="Go to step">step </variable>
+
+    <!--  KLL 2016-07-28 variable for checklists -->
+    <variable id="Checklist bullet">&#x25A1;</variable>
+
+    <!--  2017-07-24 -->
+    <!--  DITA for Print: Change the on-page text for related links -->
+    <!-- Template for generated page number of a reference 
+         in printed manual. -->
+    <variable id="On the page"> on page <param ref-name="pagenum"/></variable>
+
+    <!-- Text to use for related links label.
+         Renders as part of <related-links> element. -->
+    <!--  2017-07-24 -->
+    <!--  DITA for Print: Change the "Related Links" label -->
+    <!--  KLL 2016-09-28 Transform request: change 'additional' to 'related' to be consistent with WebHelp -->
+    <variable id="Related information">Related information</variable>
+
+</vars>
